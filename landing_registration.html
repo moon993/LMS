@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiCert</title>
+    <link rel="stylesheet" href="landing_style.css">
+</head>
+<body>
+    <div class="box-form">
+        <div class="down">
+            <h5>Registration</h5>
+            <form action="/landing_logic1.js" method="get">
+                <div class="inputs">
+                    <input type="text" placeholder="Please Enter Your USER ID" required>
+                </div>
+                <br><br>
+                <div class="inputs">
+                    <label for="position" id="list">Choose your Type:</label>
+                    <input type="text" list="type" name="position" id="position" required>
+                    <datalist id="type">
+                        <option value="Institution">
+                        <option value="Student">
+                    </datalist>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="userId" placeholder="Please Enter Your USER ID" required>
+                </div>
+                <div id="btn">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+        <br>
+    </div>
+    <script src="landing_logic1.js"></script>  
+</body>
+</html>

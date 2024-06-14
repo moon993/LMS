@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiCert</title>
+    <link rel="stylesheet" href="landing_style.css">
+     
+    
+</head>
+<body>
+   
+ <div id="content" style="display: none;">
+
+    <div class="box-form">
+        <div class="down">
+            <h5>Registration</h5>
+            <form action="" id="myform" onsubmit="return validate();">
+                <br><br>
+                <div class="inputs">
+                    <label for="position" id="list">Choose your Type:</label>
+                    <select name="position" id="type" required>
+                        <option value="Institution">Institution </option>
+                        <option value="Student">Student </option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="userId" id="name" placeholder="Please Enter Your Name" required>
+                </div>
+                <div class="btn">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+        <br>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>  
+    <script src="register.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.4/dist/web3.min.js"></script>
+</body>
+</html>
